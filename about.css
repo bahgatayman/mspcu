@@ -1,0 +1,112 @@
+.container-about {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+    /* background-color: #1a1a1a;  */
+    /* border: 1px solid #333; */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    max-width: 100%; 
+}
+
+.content {
+    flex: 1; 
+    max-width: 60%; 
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6; 
+    padding: 10px;
+    text-align: justify; 
+    background-image: url('/img/logoo (2).png');
+    background-repeat: no-repeat;
+    background-size: 80px; 
+    background-position: center;
+}
+
+.vision{
+    display: inline-block;
+    padding: 10px;
+    background-color: #7FBA00;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.mision{
+    display: inline-block;
+    padding: 10px;
+    background-color: #01A3F1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.value{
+    display: inline-block;
+    padding: 10px;
+    background-color: #F25123;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.imgc {
+    width: 250px; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .content {
+        max-width: 100%; 
+        text-align: center;
+    }
+
+    .imgc {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .imgc {
+        width: 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        gap: 15px; 
+        padding: 15px; 
+    }
+
+    .content {
+        
+        font-size: 12px; 
+        padding: 10px;
+    }
+
+    .imgc {
+        width: 120px; 
+    }
+}

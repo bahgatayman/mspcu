@@ -1,0 +1,176 @@
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .card {
+    width: 70%;
+    padding: 30px 60px 60px 60px;
+    border: 6px solid rgba(0, 0, 0, 0.288);
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    /* position: relative; */
+    background-color: #3333336c;
+    margin: 20px auto; /* Center the card */
+    transition: all 0.4s;
+}
+
+.card h2 {
+    color: rgba(255, 255, 255, 0.7); /* Updated color for better contrast */
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 30px; /* Adjusted spacing between elements */
+    justify-content: center;
+}
+
+.card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 20px 10px; /* Reduced margin for better responsiveness */
+    transition: transform 0.5s ease;
+}
+
+.card .row .col:hover {
+    transform: scale(1.05); /* Add hover effect for interactivity */
+}
+
+.card .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 18px; /* Adjusted for better scaling */
+    padding: 10px 20px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+
+.card .row .form-group label {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+    border: 5px solid #ffffff;
+    transition: all 0.4s ease;
+}
+
+.card .row input[type="submit"] {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s ease;
+}
+
+.card .row input[type="submit"]:hover {
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); /* Add subtle hover effect */
+    transition: all 0.4s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .card {
+        padding: 20px 40px;
+    }
+
+    .card h2 {
+        font-size: 50px;
+    }
+
+    .card .row {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+
+    .card .row input[type="submit"] {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    .card h2 {
+        font-size: 36px;
+    }
+
+    .card .row {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Full-width on small screens */
+    }
+
+    .card .row input[type="submit"] {
+        width: 100%;
+    }
+
+    .card .row .form-group input,
+    .card .row .form-group textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+
+    .card .row .form-group label {
+        font-size: 14px;
+    }
+
+    .card .row .form-group input,
+    .card .row .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .card .row input[type="submit"] {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

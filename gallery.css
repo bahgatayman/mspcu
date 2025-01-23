@@ -1,0 +1,52 @@
+.rubik-doodle-shadow-regular {
+    font-family: "Rubik Doodle Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+        .ss{
+            height: 70vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ss img{
+            width: 17rem;
+            height: 17rem;
+            /* margin: 30px; */
+        }
+        .ss h2{
+            margin-top: 20px;
+            color: #fff;
+            font-family: "Rubik Doodle Shadow", serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by mrhyddenn */ 
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(0,0,0,0.11);
+  border-radius: 50%;
+  border-top-color: rgba(236, 231, 220, 0.37);
+  border-right-color: rgb(43, 145, 87);
+  border-left-color: rgb(20, 102, 226);
+  border-bottom-color: rgb(224, 71, 71);
+  animation: loader1776 2s linear infinite;
+}
+
+@keyframes loader1776 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+

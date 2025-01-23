@@ -1,0 +1,80 @@
+/* From Uiverse.io by IWhat1 */ 
+
+        .containercom{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        h2{
+            color: #fff;
+            font-family: "Rubik Doodle Shadow";
+            letter-spacing: .2rem;
+        }
+        .tit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .rubik-doodle-shadow-regular {
+            font-family: "Rubik Doodle Shadow", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+.container {
+    width: 240px;
+    height: 294px;
+    margin: 20px;
+    /* perspective: 900px; */
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    transition: transform 1200ms;
+    transform-style: preserve-3d;
+    border-radius: 1rem;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(170deg);
+  }
+  
+  .front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: 0 0 10px 2px rgba(50, 50, 50, 2.5);
+    backface-visibility: hidden;
+    /* color: aliceblue; */
+    /* color: black; */
+  }
+  
+  .front, .back {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: #fff;
+    
+  }
+  
+  .back {
+    transform: rotateY(180deg) rotateZ(175deg);
+    
+  }
+  
+  .back-heading, .front-heading {
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+  
